@@ -21,8 +21,8 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
-              <a href="#" class="main-navigation-active">Магазин</a>
+            <li class="main-navigation-active">
+              <span>Магазин</span>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -42,7 +42,7 @@
         <a class="bread-crumbs-item" href="#">Средства для ухода</a>
       </div>
       <div class="shop-content">
-        <div class="shop-content-left">
+        <form class="shop-content-left" method="post" action="">
           <h2 class="shop-content-title">Производители:</h2>
           <ul class="brands-list">
             <li>
@@ -55,7 +55,7 @@
             </li>
             <li>
               <input id="brands-list-suavecito" type="checkbox" name="brands-list-checkbox" checked>
-              <label for="brands-list-mr-suavecito">Suavecito</label>
+              <label for="brands-list-suavecito">Suavecito</label>
             </li>
             <li>
               <input id="brands-list-malin-goetz" type="checkbox" name="brands-list-checkbox">
@@ -71,36 +71,30 @@
             </li>
           </ul>
           <h2 class="shop-content-title">Группы товаров:</h2>
-          <!--
-                На макете в задании было пусто, а тут:
-                https://up.htmlacademy.ru/htmlcss/12/tasks/13
-                были категории. С ними выглядело бы так:
-
-            <ul class="goods-group-list">
-              <li class="goods-group-item">
-                <input id="goods-group-item-shaving-supplies" type="radio" name="goods-group-radio" checked>
-                <label for="goods-group-item-shaving-supplies">Бритвенные принадлежности</label>
-              </li>
-              <li class="goods-group-item">
-                <input id="goods-group-item-care-supplies" type="radio" name="goods-group-radio">
-                <label for="goods-group-item-care-supplies">Средства для ухода</label>
-              </li>
-              <li class="goods-group-item">
-                <input id="goods-group-item-accessories" type="radio" name="goods-group-radio">
-                <label for="goods-group-item-accessories">Аксессуары</label>
-              </li>
-            </ul>
-          -->
-          <button class="btn shop-content-show">Показать</button>
-        </div>
+          <ul class="goods-group-list">
+            <li class="goods-group-item">
+              <input id="goods-group-item-shaving-supplies" type="radio" name="goods-group-radio" checked>
+              <label for="goods-group-item-shaving-supplies">Бритвенные принадлежности</label>
+            </li>
+            <li class="goods-group-item">
+              <input id="goods-group-item-care-supplies" type="radio" name="goods-group-radio">
+              <label for="goods-group-item-care-supplies">Средства для ухода</label>
+            </li>
+            <li class="goods-group-item">
+              <input id="goods-group-item-accessories" type="radio" name="goods-group-radio">
+              <label for="goods-group-item-accessories">Аксессуары</label>
+            </li>
+          </ul>
+          <button class="btn shop-content-show" type="submit">Показать</button>
+        </form>
         <div class="shop-content-right">
           <div class="shop-content-goods-list">
             <figure class="goods-list-item">
-              <a href="#" class="goods-list-item-link"> <!-- Переход в карточку товара -->
+              <a href="#" class="goods-list-item-link">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для путешествий BAXTER OF CALIFORNIA">
                 <p>
-                  Набор для путешествий<br>
-                  &laquo;BAXTER OF CALIFORNIA&raquo;
+                  Набор для путешествий
+                  <span>&laquo;BAXTER OF CALIFORNIA&raquo;</span>
                 </p>
               </a>
               <div class="goods-list-item-price-and-buy">
@@ -112,8 +106,8 @@
               <a href="#" class="goods-list-item-link">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA">
                 <p>
-                  Увлажняющий кондиционер<br>
-                  &laquo;BAXTER OF CALIFORNIA&raquo;
+                  Увлажняющий кондиционер
+                  <span>&laquo;BAXTER OF CALIFORNIA&raquo;</span>
                 </p>
               </a>
               <div class="goods-list-item-price-and-buy">
@@ -125,8 +119,8 @@
               <a href="#" class="goods-list-item-link">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос SAUVECITO">
                 <p>
-                  Гель для волос<br>
-                  &laquo;SAUVECITO&raquo;
+                  Гель для волос
+                  <span>&laquo;SAUVECITO&raquo;</span>
                 </p>
               </a>
               <div class="goods-list-item-price-and-buy">
@@ -138,8 +132,8 @@
               <a href="#" class="goods-list-item-link">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Глина для укладки волос AMERICAN CREW">
                 <p>
-                  Глина для укладки волос<br>
-                  &laquo;AMERICAN CREW&raquo;
+                  Глина для укладки волос
+                  <span>&laquo;AMERICAN CREW&raquo;</span>
                 </p>
               </a>
               <div class="goods-list-item-price-and-buy">
@@ -151,8 +145,8 @@
               <a href="#" class="goods-list-item-link">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Гель для волос AMERICAN CREW">
                 <p>
-                  Гель для волос<br>
-                  &laquo;AMERICAN CREW&raquo;
+                  Гель для волос
+                  <span>&laquo;AMERICAN CREW&raquo;</span>
                 </p>
               </a>
               <div class="goods-list-item-price-and-buy">
@@ -164,8 +158,8 @@
               <a href="#" class="goods-list-item-link">
                 <img src="http://placehold.it/220x165" width="220" height="165" alt="Набор для бритья BAXTER OF CALIFORNIA">
                 <p>
-                  Набор для бритья<br>
-                  &laquo;BAXTER OF CALIFORNIA&raquo;
+                  Набор для бритья
+                  <span>&laquo;BAXTER OF CALIFORNIA&raquo;</span>
                 </p>
               </a>
               <div class="goods-list-item-price-and-buy">
@@ -175,10 +169,10 @@
             </figure>
           </div>
           <div class="goods-list-pages">
-            <button class="btn goods-list-pages-btn">1</button>
-            <button class="btn goods-list-pages-btn-current">2</button>
-            <button class="btn goods-list-pages-btn">3</button>
-            <button class="btn goods-list-pages-btn">4</button>
+            <a class="btn goods-list-pages-btn" href="#">1</a>
+            <span class="btn goods-list-pages-btn-current">2</span>
+            <a class="btn goods-list-pages-btn">3</a>
+            <a class="btn goods-list-pages-btn">4</a>
           </div>
         </div>
       </div>
@@ -195,9 +189,9 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#"><!--<img width="43" height="43" src="http://placehold.it/43x43" alt="Vk.com">--></a>
-          <a class="social-btn social-btn-fb" href="#"><!--<img width="43" height="43" src="http://placehold.it/43x43" alt="Facebook.com">--></a>
-          <a class="social-btn social-btn-inst" href="#"><!--<img width="43" height="43" src="http://placehold.it/43x43" alt="Instagram.com">--></a>
+          <a class="social-btn social-btn-vk" href="#">Vk</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-inst" href="#">Instaram</a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
