@@ -7,8 +7,15 @@ body {
  margin: 0;
 }
 
-h1 {font-size: 30px;}
+h1 {
+  font-size: 30px;
+  margin: 0px;
+  padding-top: 55px;
+  padding-bottom: 28px;
+}
+
 h2 {font-size: 24px;}
+
 header {font-size: 16px;}
 .shop-content-show {font-size: 13px;}
 .goods-list-item {text-transform: none;}
@@ -18,10 +25,6 @@ header,
 footer {
   background: #000;
   color: #fff;
-}
-
-header {
-  height: 71px;
 }
 
 header a,
@@ -36,7 +39,7 @@ li {list-style: none;}
 
 header ul {
   margin: 0;
-  padding-left: 10px;
+  padding: 0;
 }
 
 header li {display: inline-block;}
@@ -64,8 +67,9 @@ header li:first-child a{
 }
 
 main,.container {
-  width: 960px;
+  width: 940px;
   margin: auto;
+  padding: 0px 10px;
 }
 
 .logo-btn{
@@ -77,6 +81,38 @@ main,.container {
 }
 
 .main-navigation{display: inline-block;}
+
+.bread-crumbs {
+  display: inline-block;
+}
+
+.bread-crumbs-item {
+  padding-right: 26px;
+  padding-left: 15px;
+  position: relative;
+}
+.bread-crumbs-item:first-child {
+  padding-left: 0;
+}
+
+
+.bread-crumbs-item::after {
+	content: "";
+	display: block;
+	background-color: #000;
+	width: 7px;
+	height: 7px;
+	transform: rotate(45deg);
+	margin-left: 15px;
+	position: absolute;
+	right: 0;
+	top: 6px;
+}
+
+.bread-crumbs-current {
+	color: #aba9a7;
+	padding-left: 15px;
+}
 
 @font-face {
   font-family: ptsansnarrow;
