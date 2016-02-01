@@ -20,20 +20,60 @@ footer {
   color: #fff;
 }
 
+header {
+  height: 71px;
+}
+
 header a,
 footer a{
   color: #fff;
 }
 
 main {background: url('../img/bg.png');}
+main a {color: black;}
 a {text-decoration: none;}
 li {list-style: none;}
 
+header ul {
+  margin: 0;
+  padding-left: 10px;
+}
+
 header li {display: inline-block;}
+
+header li a,
+header li span,
+.user-block a {
+  display: block;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 26px;
+}
+
+header li:first-child a{
+  padding-bottom: 24px;
+}
+
+.user-block a {
+  padding-left: 30px;
+}
+.user-block {
+  float: right;
+  background: url('../img/log-in.svg') 0% 50% no-repeat;
+}
 
 main,.container {
   width: 960px;
   margin: auto;
+}
+
+.logo-btn{
+  display: block;
+  width: 111px;
+  height: 24px;
+  background: url("../img/logo.png") no-repeat 50% 50%;
+  color: rgba(0,0,0,0);
 }
 
 .main-navigation{display: inline-block;}
