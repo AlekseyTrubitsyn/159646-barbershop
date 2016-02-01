@@ -17,8 +17,11 @@ h1 {
 h2 {font-size: 24px;}
 
 header {font-size: 16px;}
+
 .shop-content-show {font-size: 13px;}
+
 .goods-list-item {text-transform: none;}
+
 .goods-list-item span {text-transform: uppercase}
 
 header,
@@ -32,9 +35,16 @@ footer a{
   color: #fff;
 }
 
+p {
+  margin: 0;
+}
+
 main {background: url('../img/bg.png');}
+
 main a {color: black;}
+
 a {text-decoration: none;}
+
 li {list-style: none;}
 
 header ul {
@@ -84,6 +94,7 @@ main,.container {
 
 .bread-crumbs {
   display: inline-block;
+  margin-bottom: 55px;
 }
 
 .bread-crumbs-item {
@@ -91,10 +102,8 @@ main,.container {
   padding-left: 15px;
   position: relative;
 }
-.bread-crumbs-item:first-child {
-  padding-left: 0;
-}
 
+.bread-crumbs-item:first-child {padding-left: 0;}
 
 .bread-crumbs-item::after {
 	content: "";
@@ -112,6 +121,41 @@ main,.container {
 .bread-crumbs-current {
 	color: #aba9a7;
 	padding-left: 15px;
+}
+
+.shop-item-content-left {
+	float: left;
+	width: 460px;
+}
+
+.shop-content-right {
+	float: right;
+	width: 400px;
+}
+
+
+.shop-item-gallery-big,
+.shop-item-gallery-small{
+  box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.shop-item-description-top{
+  padding-top: 22px;
+}
+
+.shop-item-description-availability{
+  float: left;
+}
+
+.shop-item-description-article{
+  float: right;
+  color: #aeaeae;
+}
+
+.clearfix::after{
+  content:'';
+  display:table;
+  clear:both;
 }
 
 @font-face {
