@@ -232,6 +232,8 @@ main,.container {
   box-shadow: 0 0 15px rgba(0,1,1,0.2);
 }
 
+
+
 .shop-item-description ul {
   padding: 0;
 }
@@ -313,6 +315,37 @@ main,.container {
   float: left;
   width: 220px;
 }
+
+.shop-content-left ul{
+  margin: 0;
+  padding: 0;
+}
+
+.shop-content-show,
+.goods-list-pages-btn,
+.goods-list-pages-btn-current{
+  display: block;
+  color: #fff;
+  background: #000;
+  line-height: 43px;
+  width: 112px;
+  text-align: center;
+  border: none;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+.goods-list-pages-btn,
+.goods-list-pages-btn-current{
+  display: inline-block;
+  width: 43px;
+  margin-right: 7px;
+}
+.goods-list-pages-btn-current{
+  background: #fff;
+  color: #000;
+}
+
 .shop-content-right{
   float: right;
   width: 710px;
