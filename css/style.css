@@ -71,6 +71,12 @@ header li:first-child a{
   padding-bottom: 24px;
 }
 
+.main-navigation-active a,
+.main-navigation-active span{
+  border-bottom: 4px solid #fff;
+  padding-bottom: 22px;
+}
+
 .user-block a {
   padding-left: 30px;
 }
@@ -284,19 +290,31 @@ main,.container {
 }
 .shop-content-left{
   float: left;
-  width: 180px;
+  width: 220px;
 }
 .shop-content-right{
   float: right;
-  width: 600px;
+  width: 710px;
 }
 
 .shop-content-goods-list{
   display: block;
 }
 
-.goods-list-item {
-  display: inline-block;
+.goods-list-item {  
+  float: left;
+  box-sizing: border-box;
+  width: 220px;
+  height: 286px;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.goods-list-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .main-footer {
