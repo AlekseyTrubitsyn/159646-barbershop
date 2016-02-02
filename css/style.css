@@ -39,7 +39,10 @@ p {
   margin: 0;
 }
 
-main {background: url('../img/bg.png');}
+main,
+.index-content {
+  background: url('../img/bg.png');
+}
 
 main a {color: black;}
 
@@ -92,6 +95,85 @@ main,.container {
 
 .main-navigation{display: inline-block;}
 
+.index-body{background: url("../img/bg-big.jpg") ;}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.index-main{
+  background: none;
+  margin-top: 56px;
+}
+
+.index-main p{color: white;}
+
+.index-features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+
+}
+
+.index-features-item:last-child {margin-right: 0;}
+
+.index-features-name{
+  font-size: 30px;
+}
+.index-features-item p{
+  margin-top: 50px;
+}
+.index-features-item p::before{ /* размеры и положение приблизительные */
+	content: "";
+	display: block;
+	background-color: #FFF;
+	width: 17px;
+	height: 17px;
+	transform: rotate(45deg);
+	position: relative;
+	left: 50%;
+  bottom: 33px;
+}
+.index-features {margin-bottom: 80px;}
+
+.index-content {
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.index-content p {color: #000;}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+}
+
+.index-news-preview,
+.index-gallery,
+.index-gallery-content{
+  padding: 0;
+  margin: 0;
+}
+
+.index-news-preview li{
+  padding-bottom: 30px;
+}
+
+.index-news-preview li time{
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
 .bread-crumbs {
   display: inline-block;
   margin-bottom: 55px;
@@ -105,9 +187,7 @@ main,.container {
 
 .bread-crumbs-item:first-child {padding-left: 0;}
 
-.shop-item-description li {
-  position: relative;
-}
+.shop-item-description li {position: relative;}
 
 .bread-crumbs-item::after,
 .shop-item-description li::before {
@@ -123,9 +203,7 @@ main,.container {
 	top: 6px;
 }
 
-.shop-item-description li::before {
-  left: -13px;
-}
+.shop-item-description li::before {left: -13px;}
 
 .bread-crumbs-current {
 	color: #aba9a7;
@@ -143,7 +221,8 @@ main,.container {
 }
 
 .shop-item-gallery-big,
-.shop-item-gallery-small{
+.shop-item-gallery-small,
+.goods-list-item{
   box-shadow: 0 0 15px rgba(0,1,1,0.2);
 }
 
@@ -203,6 +282,48 @@ main,.container {
   margin-top: 64px;
   margin-bottom: 32px;
 }
+.shop-content-left{
+  float: left;
+  width: 180px;
+}
+.shop-content-right{
+  float: right;
+  width: 600px;
+}
+
+.shop-content-goods-list{
+  display: block;
+}
+
+.goods-list-item {
+  display: inline-block;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url('../img/bg-footer.jpg');
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  text-align: center;
+}
+
 .clearfix::after{
   content:'';
   display:table;
