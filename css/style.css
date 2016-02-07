@@ -73,6 +73,19 @@ header li span,
   padding: 25px 20px;
 }
 
+.main-navigation-active span,
+.main-navigation-active-from-item span {
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  border-bottom: 4px solid #fff;
+}
+
+.main-navigation-active,
+.main-navigation-active-from-item a {
+  padding: 0 20px;
+}
+
 header li:first-child a:hover {background-color: rgba(0,0,0,0);}
 
 header li a:hover,
@@ -82,7 +95,7 @@ header li.main-navigation-info a:hover {
 
 .main-navigation-active a,
 .main-navigation-active span{
-  border-bottom: 4px solid #fff;
+  /*border-bottom: 4px solid #fff;*/
   padding-bottom: 21px;
   cursor: default;
 }
@@ -132,14 +145,12 @@ main,
   width: 111px;
   height: 24px;
   padding-bottom: 21px;
-  background: url("../img/sprite.png") no-repeat;  
+  background: url("../img/sprite.png") no-repeat;
   background-position: 20px -157px;
   font-size: 0;
 }
 
-.logo-btn:hover {
-  background-color: none;
-}
+.logo-btn:hover {background-color: none;}
 
 .main-navigation {display: inline-block;}
 
@@ -406,8 +417,14 @@ main,
 
 .shop-item-gallery-big,
 .shop-item-gallery-small,
-.goods-list-item{
+.goods-list-item {
   box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.shop-item-gallery-small:hover,
+.goods-list-item:hover {
+  box-shadow: 5px 5px 25px rgba(0,1,1,0.2);
+  cursor: pointer;
 }
 
 .shop-item-gallery-small{
@@ -494,47 +511,113 @@ main,
   margin-top: 64px;
   margin-bottom: 32px;
 }
-.shop-content-left{
+.shop-content-left {
   float: left;
   width: 220px;
 }
 
-.shop-content-left ul{
+.shop-content-left ul {
   margin: 0;
+  margin-bottom: 55px;
   padding: 0;
 }
 
-.shop-content-right{
+.brands-list {margin-bottom: 55px;}
+
+.shop-content-left ul li {
+  position: relative;
+	padding-right: 25px;
+  margin-bottom: 17px;
+	padding-left: 43px;
+}
+
+.brands-list label::after,
+.goods-group-list label::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -100px -35px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~
+label::after {
+  background-position: -145px -35px;
+}
+
+.goods-group-list label::after {
+	top: 3px;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -100px -80px;
+}
+
+
+input[type="radio"]:checked ~
+label::after {
+  background-position: -145px -80px;
+}
+
+input:checked ~
+label {
+  color: #663d15;
+}
+
+input:disabled ~
+label {
+  opacity: 0.3;
+  color: #000;
+}
+
+.shop-content-right {
   float: right;
   width: 710px;
 }
 
 .shop-content-show,
 .goods-list-pages-btn,
-.goods-list-pages-btn-current{
+.goods-list-pages-btn-current {
   display: block;
   color: #fff;
   background: #000;
   line-height: 43px;
   text-align: center;
   border: none;
-  margin-top: 50px;
   box-sizing: border-box;
 }
 
 .goods-list-pages-btn,
-.goods-list-pages-btn-current{
+.goods-list-pages-btn-current {
+  margin-top: 25px;
+}
+
+.shop-content-show {
+  margin-top: -5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.goods-list-pages-btn,
+.goods-list-pages-btn-current {
   display: inline-block;
   padding: 0 18px;
   margin-right: 7px;
 }
 
-.goods-list-pages-btn-current{
+.goods-list-pages-btn-current {
   background: #fff;
   color: #000;
 }
 
-.goods-list-pages-btn-current:hover{
+.goods-list-pages-btn-current:hover {
   background: #fff;
   color: #000;
   cursor:default;
@@ -576,9 +659,7 @@ main,
   color: #ffffff;
 }
 
-.footer-contacts a:hover {
-  text-decoration: none;
-}
+.footer-contacts a:hover {text-decoration: none;}
 
 .footer-social {
   float: left;
@@ -604,33 +685,19 @@ main,
     background-color 0.5s;
 }
 
-.social-btn:hover {
-  background-color: #ffffff;
-}
+.social-btn:hover {background-color: #ffffff;}
 
-.social-btn-vk {
-  background-position: 9px -21px;
-}
+.social-btn-vk {background-position: 9px -21px;}
 
-.social-btn-fb {
-  background-position: 16px -70px;
-}
+.social-btn-fb {background-position: 16px -70px;}
 
-.social-btn-inst {
-  background-position: 12px -120px;
-}
+.social-btn-inst {background-position: 12px -120px;}
 
-.social-btn-vk:hover {
-  background-position: -41px -21px;
-}
+.social-btn-vk:hover {background-position: -41px -21px;}
 
-.social-btn-fb:hover {
-  background-position: -34px -70px;
-}
+.social-btn-fb:hover {background-position: -34px -70px;}
 
-.social-btn-inst:hover {
-  background-position: -38px -120px;
-}
+.social-btn-inst:hover {background-position: -38px -120px;}
 
 .footer-copyright {
   float: right;
